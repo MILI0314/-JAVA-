@@ -1,0 +1,30 @@
+package HEELO;
+
+public class ShowCurrentTime {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		long totalMilliseconds=System.currentTimeMillis();
+		
+		//计算1970年1月1日午夜到现在的毫秒数
+		long totalSeconds=totalMilliseconds/1000;
+		
+		//得到当前的秒数
+		long currentSecond=totalSeconds%60;
+		
+		//得到总的分钟数
+		long totalMinutes=totalSeconds/60;
+		
+		//得到当前分钟数
+		long currentMinute=totalMinutes%60;
+		
+		//得到总的小时数
+		long totalHours=totalMinutes/60;
+		
+		//计算当前的小时数
+		long currentHour=totalHours%24;
+		
+		System.out.println("Current time is"+currentHour+":"+currentMinute+":"+currentSecond+"GMT");
+		
+
+	}
