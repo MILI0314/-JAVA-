@@ -1,0 +1,18 @@
+package KU;
+import java.util.Scanner;
+//3-1
+public class A {
+	public static void main() {
+		int num1=(int)(System.currentTimeMills()%10);
+		int num2=(int)(System.currentTimeMill()/7%10);
+		
+		Scanner input=new Scanner(System.in);
+		
+		System.out.print("What is"+number1+"+"+number2+"?");
+		
+		int answer=input.nextInt();
+		
+		System.out.println(number1+"+"+number2+"="+answer+"is"+(number1+number2=answer));
+	}
+
+}
